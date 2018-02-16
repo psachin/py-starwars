@@ -1,15 +1,23 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Python Programming Language</title>
+
+		<meta name="description" content="Python for fun and profit">
+		<meta name="author" content="Sachin">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-		<!-- Theme used for syntax highlighting of code -->
+		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
@@ -20,30 +28,340 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
 	</head>
+
 	<body>
+
 		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+			  <section>
+			    <h1>Python</h1>
+			    <h4 style="color: orange">for fun & profit</h4>
+			    <p>
+			      <small>by <a href="mailto:iclcoolster@gmail.com">Sachin</a></small>
+			    </p>
+			  </section>
+
+				<section>
+				  <h2 style="color: orange">Why Python?</h2>
+				  <section>
+				  <span class="fragment fade-in">
+					<p class="fragment grow highlight-current-blue">Easy to learn</p>
+					<p class="fragment grow
+						  highlight-current-blue">Free and Open Source
+					</p>
+					<p class="fragment grow
+						  highlight-current-blue">Scientific
+						  Computing
+						  </p>
+					<p class="fragment grow
+						  highlight-current-blue">Powerful
+						  interactive interpreter
+					</p>
+					<p class="fragment grow
+						  highlight-current-blue">Readily
+						  available libraries
+					</p>
+					<p class="fragment grow
+						  highlight-current-blue">Well documented
+					</p>
+
+				  </span>
+				  </section>
+
+				  <section>
+				    <h4 style="color: yellow">Easy to learn</h4>
+				    <span class="fragments fade-in">
+				      <p class="fragments grow">MIT
+					Open Course Ware</p>
+				      <img src="img/mit-ocw.jpg">
+                                    </span>
+				  </section>
+
+				  <section>
+				    <h4 style="color: yellow">Free and Open Source</h4>
+				    <span class="fragments fade-in">
+				      <p class="fragments grow">Power
+					to share</p>
+				      <img height=250 width=220 src=img/opensource.png>
+				  </section>
+
+				  <section>
+				    <h4 style="color: yellow">Scientific Computing</h4>
+				    <span class="fragments fade-in">
+				      <p class="fragments grow">NumPy,
+					SciPy, Pandas..</p>
+				      <img src="img/scipy.png">
+				  </section>
+
+				  <section>
+				    <h4 style="color: yellow">Powerful interpreter</h4>
+				    <span class="fragments fade-in">
+				      <p class="fragments
+				      grow">IPython, bPython, &
+					python</p>
+				      <img src="img/ipython.jpg">
+				  </section>
+
+				  <section>
+				    <h4 style="color: yellow">Well documented</h4>
+				    <pre>
+				      <code data-trim contenteditable datanoescape>
+def is_admin(user):
+    '''Allow if user is admin.
+
+    Usage:
+    ----
+    @is_admin
+    def draw_circle(radius=4):
+        ...
+    ----
+    user: A valid username
+    Raises an exception if user is not admin
+    '''
+    if user != 'admin':
+        raise Exception("Access denied!")
+
+				      </code>
+				    </pre>
+				  </section>
+
+				</section>
+				</section>
+
+
+                                <section>
+                                  <h2 style="color:
+					     orange">History</h2>
+				  <section> </section>
+				  <section>
+				    <img src="img/guido.jpg">
+				    <p><a href="https://www.python.org/~guido/">Guido
+				    van Rossum</a>, Dropbox</p>
+				  </section>
+				  <section>
+				    <img src="img/monty.jpg">
+				    <p><a href="http://www.imdb.com/title/tt0063929/">Monty Python's Flying Circus, 1969-1974</a></p>
+				  </section>
+				  <section>
+				    <p>Implementation started in
+				      December 1989</p>
+				    <p style="color: yellow">Python
+				      1.0 - January 1994</p>
+				    <p style="color: yellow">...</p>
+				    <p style="color: yellow">...</p>
+				    <p style="color: yellow">Python
+				      3.5.1 - December 2015</p>
+				  </section>
+				  <section>
+				    <h4>Functional programming tool</h4>
+				      <p style="color: #BCB0B0">lambda, map, filter, reduce..</p>
+				    were inspired from <b style="color: yellow">lisp</b>
+				  </section>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+				  <h2 style="color: orange">Where can I use Python?</h2>
+				        <section></section>
+					<section>
+					  <p>Application
+					    development</p>
+					  <img src="img/cover_automate_thumb.png">
+					</section>
+					<section>
+					  <p>Web development</p>
+					  <img src="img/python_3_web_development.jpg">
+					</section>
+					<section>
+					  <p>Game development</p>
+					  <img src="img/cover_inventwithpython3_thumb.jpg">
+					</section>
+					<section>
+					  <p>Cryptography</p>
+					  <img src="img/cover_hackingciphers_thumb.png">
+					</section>
+					<section>
+					  <p>Hardware</p>
+					  <img src="img/rpi-py.jpg">
+					</section>
+				</section>
+
+				<section>
+				  <h2 style="color: orange">Who uses Python?</h2>
+				  <section>
+				  </section>
+				  <section>
+				    <img height=300 width=550
+					 src="img/YouTube-logo-full_color.png">
+				    <p><i>"Python is fast enough for our
+				    site and allows us to produce
+				    maintainable features in record
+				    times, with a minimum of
+				    developers"</i> said Cuong Do,
+				    Software Architect</p>
+				  </section>
+				  <section>
+				    <h2>Google</h2>
+				    <p><i>"Python has been an important
+				    part of Google since the
+				    beginning,.."</i> Peter Norvig,
+				    director of search quality at Google</p>
+				  </section>
+				  <section>
+				    <img height=250 width=250 src="img/univ.png">
+				    <p><i>"I have the students learn
+				    Python in our undergraduate and
+				    graduate Semantic Web courses."</i>
+				    said Prof. James A. Hendler.
+				    University of Maryland</p>
+				  </section>
+				  <section>
+				    <img height=350 width=450 src="img/expEYES Junior_02.jpg">
+				    <p><i>Python modules for ExpEYES
+				    Junior developed by Dr. Ajith
+				    Kumar, IUAC, New Delhi</i></p>
+				  </section>
+				  <section>
+				    <p>NASA, IBM, Yahoo, Walt Disney..</p>
+				  </section>
+				</section>
+
+				<section style="text-align: left;">
+					<h2> I use Python in..</h2>
+					<p style="color: orange">
+					  - Web development in Django<br>
+					  - System scripts to ease my
+					  work<br>
+					  - On Raspberry Pi
+					</p>
+				</section>
+
+				<section>
+				  <img height=500 width=700
+				       src="img/expeyes-full.jpg">
+				  <p style="font-size: 50%"><i>ExpEYES Junior attached to
+				  GNU/Linux based tablet(Aakash). GUI
+				  for ExpEYES is written in Python</i></p>
+				</section>
+
+				<section>
+				  <h2 style="color: orange;">In this course</h2>
+				  <section>
+				  </section>
+				  <section>
+				    <p>Introduction to Python
+				      Programming Language</p>
+				    <p style="text-align: center;
+					      font-size: 60%;">
+				      - Get familiar with Python interpreter<br>
+				      - Python virtual environment<br>
+				      - Python package utils<br>
+				      - How to get help?
+				    </p>
+				  </section>
+				  <section>
+				    <p>Data structures</p>
+				    <p style="text-align: center;
+					      font-size: 60%;">
+				      - Basic data types
+				    </p>
+				  </section>
+				  <section>
+				    <p>Control statements</p>
+				    <p style="text-align: center;
+					      font-size: 60%;">
+				      - if..else<br>
+				      - while<br>
+				      - with<br>
+				      - for
+				    </p>
+				  </section>
+				  <section>
+				    <p>Functions</p>
+				    <p style="text-align: center;
+					      font-size: 60%;">
+				      - Define a function<br>
+				      - Function parameters<br>
+				      - lambda function<br>
+				      - Python's builtin functions
+				    </p>
+				  </section>
+				  <section>
+				    <p>Modules</p>
+				    <p style="text-align: center;
+					      font-size: 60%;">
+				      - Python module<br>
+				      - Correctly using a module<br>
+				      - Built a module/Package
+				    </p>
+				  </section>
+				  <section>
+				    <p>OOps, Decorator, Iterator & Generators</p>
+				  </section>
+				  <section>
+				    <p>File i/o</p>
+				  </section>
+				  <section>
+				    <p>Testing, Socket Programming, &
+				    Threading/Multiprocessing</p>
+				    <p style="text-align: center;
+					      font-size: 60%;">
+				      - Examples
+				    </p>
+				  </section>
+				</section>
+
+				<section>
+				  <h4>Questions?</h4>
+				  <p>May the Force be with you</p>
+
+
+				  <p style="text-align: center;
+					    margin-top: 9cm;
+					    font-size: 50%;">
+				    Online: <a href="http://psachin.github.io/py-starwars">http://psachin.github.io/py-starwars</a>
+					    |
+				    Source: <a href="http://github.com/psachin/py-starwars">https://github.com/psachin/py-starwars</a>
+				  </p>
+				</section>
 			</div>
+
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
 		</script>
+
 	</body>
 </html>
